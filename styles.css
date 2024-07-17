@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #6d4e3a;
+  --secondary: #e8dcd0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+body .cv--container {
+  margin: 16px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.16);
+}
+body .cv--container .cv--container--background .top--left--geometry {
+  background-color: var(--primary);
+  position: absolute;
+  width: 26.75rem;
+  height: 12.5rem;
+  rotate: -32deg;
+  top: -8rem;
+  left: -8rem;
+  z-index: 2;
+}
+body .cv--container .cv--container--background .top--right--geometry {
+  background-color: var(--secondary);
+  position: absolute;
+  width: 26.75rem;
+  height: 12.5rem;
+  top: -4rem;
+  right: -8rem;
+  z-index: 1;
+  rotate: 32deg;
+}
+body .cv--container .cv--container--background .bottom--left--geometry {
+  background-color: var(--secondary);
+  position: absolute;
+  width: 26.75rem;
+  height: 12.5rem;
+  bottom: -10rem;
+  left: -8rem;
+  z-index: 1;
+  rotate: 16deg;
+}
+body .cv--container .cv--container--background .bottom--right--geometry {
+  background-color: var(--primary);
+  position: absolute;
+  width: 26.75rem;
+  height: 12.5rem;
+  rotate: -32deg;
+  bottom: -10rem;
+  right: -8rem;
+  z-index: 2;
+}
+body .cv--container .cv--container--content {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+body .cv--container .cv--container--content .main--content {
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+}
+body .cv--container .cv--container--content .main--content .main--content--background {
+  background-color: black;
+  height: 100%;
+  opacity: 0.16;
+}/*# sourceMappingURL=styles.css.map */
