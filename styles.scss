@@ -11,20 +11,26 @@
   --secondary: #e8dcd0;
 }
 
+.top-16px {
+  margin-top: 16px;
+}
+
 body {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  font-family: "Poppins", sans-serif;
+
   .cv--container {
     margin: 16px;
     width: 100%;
     overflow: hidden;
     position: relative;
-    -webkit-box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.08);
 
     .cv--container--background {
       .top--left--geometry {
@@ -57,7 +63,7 @@ body {
         bottom: -10rem;
         left: -8rem;
         z-index: 1;
-        rotate: 16deg;
+        rotate: 8deg;
       }
 
       .bottom--right--geometry {
@@ -79,12 +85,77 @@ body {
 
       .main--content {
         height: 100%;
-        width: 50%;
+        width: 100%;
         z-index: 100;
-        .main--content--background {
-          background-color: black;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.16);
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+
+        .main--content--image {
           height: 100%;
-          opacity: 0.16;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            height: 12rem;
+            width: 12rem;
+            object-fit: cover;
+            border-radius: 100%;
+          }
+        }
+
+        .main--content--information {
+          height: 100%;
+          width: 100%;
+          padding: 0 16px;
+          display: grid;
+          grid-template-rows: auto auto auto;
+
+          p {
+            margin-top: 8px;
+          }
+        }
+      }
+      .description--content {
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        padding: 16px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .header {
+          margin-top: 32px;
+
+          .header--description {
+            font-size: 12px;
+            margin-top: 16px;
+            width: 90%;
+          }
+        }
+
+        .pengalaman {
+          p {
+            font-size: 12px;
+            width: 90%;
+            margin-top: 8px;
+          }
+        }
+
+        .kontak {
+          h6 {
+            display: flex;
+            align-items: start;
+            margin-bottom: 8px;
+            img {
+              height: 16px;
+              width: 16px;
+              margin-right: 4px;
+            }
+          }
         }
       }
     }
