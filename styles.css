@@ -203,7 +203,7 @@ body .kontak .ikon--kontak img {
 
 @media screen and (max-width: 412px) {
   body .hero {
-    height: 95vh;
+    height: 100vh;
   }
   body .hero .hero--content .content--image {
     position: relative;
