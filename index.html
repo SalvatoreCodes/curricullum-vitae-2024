@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,85 +15,134 @@
     <title>Curicculum Vitae</title>
   </head>
   <body>
-    <div class="cv--container">
-      <div class="cv--container--background">
-        <div class="top--left--geometry"></div>
-        <div class="top--right--geometry"></div>
-        <div class="bottom--left--geometry"></div>
-        <div class="bottom--right--geometry"></div>
-      </div>
-      <div class="cv--container--content">
-        <div class="main--content">
-          <div class="main--content--image">
-            <img src="./assets/profile.jpeg" alt="placeholder" />
-          </div>
-          <div class="main--content--information">
-            <div class="edukasi">
-              <h2>Edukasi</h2>
-              <p>2011-2018 SD Katolik St.Fransiskus Xaverius Kakaskasen</p>
-              <p>2018-2021 SMP Negeri 1 Tomohon</p>
-              <p>2021-sekarang SMKS Kristen 2 Tomohon</p>
-            </div>
-            <div class="penghargaan top-16px">
-              <h2>Penghargaan</h2>
-              <p>2023-2024 Ketua OSIS SMKS Kristen 2 Tomohon</p>
-            </div>
-            <div class="skills top-16px">
-              <h2>Skills</h2>
-              <p>Web Development</p>
-              <p>Software Development</p>
-              <p>UI & UX Design</p>
-              <p>Programming</p>
-              <p></p>
-            </div>
-          </div>
+    <div class="hero">
+      <div class="hero--background">
+        <div class="hero--top">
+          <div class="hero--top--left"></div>
+          <div class="hero--top--right"></div>
         </div>
-        <div class="description--content">
-          <div class="header">
-            <h1>Putra Goni</h1>
-            <p>Software Developer</p>
-            <p class="header--description">
-              Saya adalah seorang Software Developer, yang bisa membuat aplikasi
-              dan website yang dinamik untuk mobile dan komputer, saya memiliki
-              4 tahun programming dan mudah bekerja sama dalam sebuah proyek
-              bersama tim.
-            </p>
-          </div>
-          <div class="pengalaman">
-            <h2 class="top-16px">Pengalaman</h2>
-            <p>2019-2020 Waiter di Restoran Warong Bakar-bakar</p>
-            <p>2021-2023 Publisher di LensaUtara</p>
-            <p>2023-2024 Admin di Lion Parcel Lelepowan</p>
-            <p>Februari 2024 - sekarang Kasir di Restoran Warong Bakar-bakar</p>
-          </div>
-          <div class="kontak">
-            <h1 class="top-16px">Kontak</h1>
-            <h6>
-              <img src="./assets/wa logo.png" alt="wa logo" />0882-4621-8405
-            </h6>
-            <h6>
-              <img
-                src="./assets/insta logo.png"
-                alt="insta logo"
-              />@benedict_goni
-            </h6>
-            <h6>
-              <img
-                src="./assets/email logo.png"
-                alt="email logo"
-              />goniputra1@gmail.com
-            </h6>
-            <h6>
-              <img src="./assets/linkedin logo.png" alt="linkedin logo" />putra
-              goni
-            </h6>
-            <h6>
-              <img src="./assets/facebook logo.png" alt="facebook logo" />Putra
-              Goni
-            </h6>
-          </div>
+        <div class="hero--bottom">
+          <div class="hero--bottom--left"></div>
+          <div class="hero--bottom--right"></div>
+        </div>
+      </div>
+      <div class="hero--content">
+        <div class="content--information">
+          <h1>PUTRA GONI</h1>
+          <h2>Software Developer</h2>
+        </div>
+        <div class="content--image">
+          <img data-aos="fade-up" src="./assets/profile.png" alt="profile" />
         </div>
       </div>
     </div>
+
+    <div class="information">
+      <h2 data-aos="fade-up">Halo! Nama saya Putra Goni</h2>
+      <p data-aos="fade-up">
+        Saya adalah seorang pelajar di SMKS Kristen 2 Tomohon yang mempunyai
+        ambisi yang tinggi dan seorang pekerja keras. Saya dapat beradaptasi di
+        dalam semua lingkungan kerja dan di dalam tim dan dapat mengembangkan
+        kinerja tim untuk menyelesaikan sesuatu. Saya mempunyai 3 tahun
+        pengalaman dalam programming, 1 tahun dalam UI & UX design, 4 tahun
+        bekerja di berbagai tempat dengan lingkungan dan tim yang berbeda-beda,
+        dan juga saya mempunyai pengalaman dalam bekerja di dalam suatu
+        organisasi. Menjadi Ketua OSIS membekali saya dengan pengetahuan dalam
+        berorganisasi dan juga kepemimpinan.
+      </p>
+    </div>
+
+    <div class="edukasi">
+      <h1 data-aos="fade-right">EDUKASI</h1>
+      <h3 data-aos="fade-right">
+        2012-2019
+        <h4 data-aos="fade-right">
+          SD Katolik St. Fransiskus Xaverius Kakaskasen
+        </h4>
+      </h3>
+      <h3 data-aos="fade-right">
+        2019-2022
+        <h4 data-aos="fade-right">SMP Negeri 1 Tomohon</h4>
+      </h3>
+      <h3 data-aos="fade-right">
+        2022-Sekarang
+        <h4 data-aos="fade-right">SMKS Kristen 2 Tomohon</h4>
+      </h3>
+    </div>
+
+    <div class="penghargaan">
+      <h1 data-aos="fade-up">Penghargaan</h1>
+      <h2 data-aos="fade-up">Ketua OSIS SMKS Kristen 2 Tomohon 2023-2024</h2>
+    </div>
+
+    <div class="skills">
+      <h1 data-aos="fade-right">Skills</h1>
+      <ul>
+        <li data-aos="fade-right"><h3>UI & UX Design</h3></li>
+        <li data-aos="fade-right"><h3>Frontend Development</h3></li>
+        <li data-aos="fade-right"><h3>Firebase</h3></li>
+        <li data-aos="fade-right"><h3>HTML</h3></li>
+        <li data-aos="fade-right"><h3>CSS</h3></li>
+        <li data-aos="fade-right"><h3>Javascript</h3></li>
+        <li data-aos="fade-right"><h3>React</h3></li>
+        <li data-aos="fade-right"><h3>Microsoft Word</h3></li>
+        <li data-aos="fade-right"><h3>Microsoft Excel</h3></li>
+        <li data-aos="fade-right"><h3>Microsoft Powerpoint</h3></li>
+        <li data-aos="fade-right"><h3>English Proficiency</h3></li>
+      </ul>
+    </div>
+
+    <div class="separator"></div>
+
+    <div data-aos="fade-right" class="pengalaman">
+      <h1>Pengalaman Kerja</h1>
+      <h3 data-aos="fade-right">
+        2020-2021
+        <h4 data-aos="fade-right">Waiter di restoran Warong Bakar-Bakar</h4>
+      </h3>
+      <h3 data-aos="fade-right">
+        2021-2022
+        <h4 data-aos="fade-right">Publisher berita di lensautara.id</h4>
+      </h3>
+      <h3 data-aos="fade-right">
+        2023-2024
+        <h4 data-aos="fade-right">Admin di Lion Parcel Lelepowan</h4>
+      </h3>
+      <h3 data-aos="fade-right">
+        Maret 2024-Sekarang
+        <h4 data-aos="fade-right">Kasir di restoran Warong Bakar-Bakar</h4>
+      </h3>
+    </div>
+
+    <div class="kontak">
+      <h1>Kontak</h1>
+      <div class="ikon--kontak">
+        <img src="./assets/whatsapp.png" alt="logo whatsapp" />
+        <h3>+62 882-4621-8405</h3>
+      </div>
+      <div class="ikon--kontak">
+        <img src="./assets/instagram.png" alt="logo instagram" />
+        <h3>@benedict_goni</h3>
+      </div>
+      <div class="ikon--kontak">
+        <img src="./assets/email.png" alt="logo email" />
+        <h3>goniputra1@gmail.com</h3>
+      </div>
+      <div class="ikon--kontak">
+        <img src="./assets/linkedin.png" alt="logo linkedin" />
+        <h3>putra goni</h3>
+      </div>
+      <div class="ikon--kontak">
+        <img src="./assets/facebook.png" alt="logo facebok" />
+        <h3>Putra Goni</h3>
+      </div>
+      <div class="ikon--kontak">
+        <img src="./assets/github.png" alt="logo github" />
+        <h3>SalvatoreCodes</h3>
+      </div>
+    </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

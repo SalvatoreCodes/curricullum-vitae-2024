@@ -11,131 +11,190 @@
   --secondary: #e8dcd0;
 }
 
-.top-16px {
-  margin-top: 16px;
-}
-
 body {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: #222;
 }
-body .cv--container {
-  margin: 16px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.08);
-}
-body .cv--container .cv--container--background .top--left--geometry {
-  background-color: var(--primary);
-  position: absolute;
-  width: 26.75rem;
-  height: 12.5rem;
-  rotate: -32deg;
-  top: -8rem;
-  left: -8rem;
-  z-index: 2;
-}
-body .cv--container .cv--container--background .top--right--geometry {
-  background-color: var(--secondary);
-  position: absolute;
-  width: 26.75rem;
-  height: 12.5rem;
-  top: -4rem;
-  right: -8rem;
-  z-index: 1;
-  rotate: 32deg;
-}
-body .cv--container .cv--container--background .bottom--left--geometry {
-  background-color: var(--secondary);
-  position: absolute;
-  width: 26.75rem;
-  height: 12.5rem;
-  bottom: -10rem;
-  left: -8rem;
-  z-index: 1;
-  rotate: 8deg;
-}
-body .cv--container .cv--container--background .bottom--right--geometry {
-  background-color: var(--primary);
-  position: absolute;
-  width: 26.75rem;
-  height: 12.5rem;
-  rotate: -32deg;
-  bottom: -10rem;
-  right: -8rem;
-  z-index: 2;
-}
-body .cv--container .cv--container--content {
-  display: flex;
+body .hero {
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
-body .cv--container .cv--container--content .main--content {
+body .hero .hero--background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .hero .hero--background .hero--top {
+  position: relative;
+}
+body .hero .hero--background .hero--top .hero--top--left {
+  position: absolute;
+  left: -24px;
+  top: -64px;
+  height: 128px;
+  width: 125vw;
+  background-color: var(--primary);
+  rotate: -8deg;
+}
+body .hero .hero--background .hero--top .hero--top--right {
+  position: absolute;
+  height: 128px;
+  width: 125vw;
+  background-color: var(--secondary);
+  rotate: 4deg;
+  top: -92px;
+  right: -64px;
+}
+body .hero .hero--background .hero--bottom {
+  position: absolute;
+  bottom: 0;
+}
+body .hero .hero--background .hero--bottom .hero--bottom--left {
+  height: 132px;
+  width: 125vw;
+  background-color: var(--secondary);
+  rotate: 4deg;
+  position: absolute;
+  left: -24px;
+  bottom: -48px;
+  z-index: 3;
+}
+body .hero .hero--background .hero--bottom .hero--bottom--right {
+  position: absolute;
+  height: 92px;
+  bottom: 16px;
+  width: 100vw;
+  background-color: var(--primary);
+  rotate: -8deg;
+  z-index: 1;
+}
+body .hero .hero--content {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  z-index: 100;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.16);
-  display: grid;
-  grid-template-rows: 1fr 3fr;
+  padding-top: 92px;
 }
-body .cv--container .cv--container--content .main--content .main--content--image {
+body .hero .hero--content .content--information {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+body .hero .hero--content .content--information h1 {
+  font-size: 6rem;
+  line-height: 92px;
+}
+body .hero .hero--content .content--information h2 {
+  color: var(--primary);
+  margin-left: 8px;
+}
+body .hero .hero--content .content--image {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: end;
+  position: relative;
 }
-body .cv--container .cv--container--content .main--content .main--content--image img {
-  height: 12rem;
-  width: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+body .hero .hero--content .content--image img {
+  width: 95%;
+  position: absolute;
+  left: -32px;
+  z-index: 2;
+}
+body .information {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 16px 16px 64px 16px;
+  position: relative;
+  z-index: 500;
+}
+body .information h2 {
+  color: var(--primary);
+  text-align: center;
+}
+body .information p {
+  text-align: justify;
+  margin-top: 16px;
+  line-height: 21px;
+}
+body .edukasi {
+  width: 100%;
+  padding: 16px;
+}
+body .edukasi h1 {
+  margin-bottom: 16px;
+}
+body .edukasi h3 {
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+}
+body .edukasi h4 {
+  margin-bottom: 16px;
+}
+body .penghargaan {
+  width: 100%;
+  text-align: center;
+  padding: 32px 0;
+  background-color: var(--primary);
+}
+body .penghargaan h1 {
+  color: var(--secondary);
+}
+body .penghargaan h2 {
+  color: white;
+}
+body .skills {
+  width: 100%;
+  padding: 16px;
+}
+body .skills h1 {
+  margin-bottom: 16px;
+}
+body .skills ul {
+  margin-left: 16px;
+}
+body .separator {
+  width: 75%;
+  height: 4px;
+  background-color: var(--primary);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 16px 0;
   border-radius: 100%;
 }
-body .cv--container .cv--container--content .main--content .main--content--information {
-  height: 100%;
+body .pengalaman {
   width: 100%;
-  padding: 0 16px;
-  display: grid;
-  grid-template-rows: auto auto auto;
-}
-body .cv--container .cv--container--content .main--content .main--content--information p {
-  margin-top: 8px;
-}
-body .cv--container .cv--container--content .description--content {
-  width: 100%;
-  height: 100%;
-  z-index: 100;
   padding: 16px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
 }
-body .cv--container .cv--container--content .description--content .header {
-  margin-top: 32px;
+body .pengalaman h1 {
+  margin-bottom: 16px;
 }
-body .cv--container .cv--container--content .description--content .header .header--description {
-  font-size: 12px;
-  margin-top: 16px;
-  width: 90%;
-}
-body .cv--container .cv--container--content .description--content .pengalaman p {
-  font-size: 12px;
-  width: 90%;
-  margin-top: 8px;
-}
-body .cv--container .cv--container--content .description--content .kontak h6 {
+body .pengalaman h3 {
+  color: var(--primary);
   display: flex;
-  align-items: start;
-  margin-bottom: 8px;
+  flex-direction: column;
 }
-body .cv--container .cv--container--content .description--content .kontak h6 img {
-  height: 16px;
-  width: 16px;
-  margin-right: 4px;
+body .pengalaman h4 {
+  margin-bottom: 16px;
+}
+body .kontak {
+  background-color: #222;
+  color: var(--secondary);
+  padding: 16px;
+}
+body .kontak h1 {
+  margin-bottom: 16px;
+}
+body .kontak .ikon--kontak {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+body .kontak .ikon--kontak img {
+  height: 32px;
 }/*# sourceMappingURL=styles.css.map */
