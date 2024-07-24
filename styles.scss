@@ -17,7 +17,7 @@ body {
   color: #222;
 
   .hero {
-    height: 120vh;
+    height: 95vh;
     width: 100vw;
     position: relative;
     .hero--background {
@@ -77,13 +77,15 @@ body {
     .hero--content {
       display: flex;
       flex-direction: column;
+      align-items: center;
       height: 100%;
       width: 100%;
       padding-top: 92px;
+      max-width: 768px;
       .content--information {
         display: flex;
         flex-direction: column;
-        padding: 16px;
+        padding: 32px 16px;
         position: relative;
 
         h1 {
@@ -103,48 +105,60 @@ body {
 
         img {
           position: relative;
-          width: 85%;
+          width: 100%;
           bottom: 32px;
-          left: -32px;
+          left: -16px;
           z-index: 2;
         }
       }
     }
   }
 
-  .information {
+  .information--container {
     width: 100%;
     background-color: var(--secondary);
     padding: 16px 16px 64px 16px;
     position: relative;
     z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    h2 {
-      color: var(--primary);
-      text-align: center;
-    }
+    .information {
+      max-width: 768px;
+      h2 {
+        color: var(--primary);
+        text-align: center;
+      }
 
-    p {
-      text-align: justify;
-      margin-top: 16px;
+      p {
+        text-align: justify;
+        margin-top: 16px;
+      }
     }
   }
 
-  .edukasi {
+  .edukasi--container {
     width: 100%;
     padding: 16px;
+    display: flex;
+    justify-content: center;
 
-    h1 {
-      margin-bottom: 16px;
-    }
+    .edukasi {
+      width: 100%;
+      max-width: 768px;
+      h1 {
+        margin-bottom: 16px;
+      }
 
-    h3 {
-      color: var(--primary);
-      display: flex;
-      flex-direction: column;
-    }
-    h4 {
-      margin-bottom: 16px;
+      h3 {
+        color: var(--primary);
+        display: flex;
+        flex-direction: column;
+      }
+      h4 {
+        margin-bottom: 16px;
+      }
     }
   }
 
@@ -162,16 +176,22 @@ body {
     }
   }
 
-  .skills {
+  .skills--container {
     width: 100%;
     padding: 16px;
+    display: flex;
+    justify-content: center;
 
-    h1 {
-      margin-bottom: 16px;
-    }
+    .skills {
+      width: 100%;
+      max-width: 768px;
+      h1 {
+        margin-bottom: 16px;
+      }
 
-    ul {
-      margin-left: 16px;
+      ul {
+        margin-left: 16px;
+      }
     }
   }
 
@@ -186,46 +206,59 @@ body {
     border-radius: 100%;
   }
 
-  .pengalaman {
+  .pengalaman--container {
     width: 100%;
     padding: 16px;
+    display: flex;
+    justify-content: center;
 
-    h1 {
-      margin-bottom: 16px;
-    }
+    .pengalaman {
+      width: 100%;
+      max-width: 768px;
 
-    h3 {
-      color: var(--primary);
-      display: flex;
-      flex-direction: column;
-    }
-    h4 {
-      margin-bottom: 16px;
+      h1 {
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        color: var(--primary);
+        display: flex;
+        flex-direction: column;
+      }
+      h4 {
+        margin-bottom: 16px;
+      }
     }
   }
 
-  .kontak {
+  .kontak--container {
     background-color: #222;
     color: var(--secondary);
     padding: 16px;
+    display: flex;
+    justify-content: center;
 
-    h1 {
-      margin-bottom: 16px;
-    }
+    .kontak {
+      width: 100%;
+      max-width: 768px;
+      h1 {
+        margin-bottom: 16px;
+      }
 
-    .ikon--kontak {
-      display: flex;
-      gap: 8px;
-      align-items: end;
-      margin-bottom: 16px;
-      img {
-        height: 32px;
+      .ikon--kontak {
+        display: flex;
+        gap: 8px;
+        align-items: end;
+        margin-bottom: 16px;
+        img {
+          height: 32px;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 600px) {
   body {
     .hero {
       height: 100vh;
@@ -234,6 +267,31 @@ body {
           position: relative;
           left: -64px;
           width: 150vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    .hero {
+      .hero--content {
+        .content--image {
+          img {
+            left: -92px;
+            width: 95%;
+          }
+        }
+        .content--information {
+          right: 0;
+          top: 25%;
+          position: absolute;
+          max-width: 50%;
+          h1 {
+            font-size: 8rem;
+            line-height: 6rem;
+          }
         }
       }
     }
