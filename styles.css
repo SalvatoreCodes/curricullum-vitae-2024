@@ -33,8 +33,8 @@ body .hero .hero--background .hero--top {
 body .hero .hero--background .hero--top .hero--top--left {
   position: absolute;
   left: -24px;
-  top: -64px;
-  height: 128px;
+  top: -92px;
+  height: 168px;
   width: 125vw;
   background-color: var(--primary);
   rotate: -8deg;
@@ -69,7 +69,7 @@ body .hero .hero--background .hero--bottom .hero--bottom--right {
   bottom: 16px;
   width: 100vw;
   background-color: var(--primary);
-  rotate: -8deg;
+  rotate: -4deg;
   z-index: 1;
 }
 body .hero .hero--content {
@@ -244,6 +244,19 @@ body .kontak--container .kontak .ikon--kontak img {
   }
 }
 @media screen and (min-width: 992px) {
+  body .hero .hero--background .hero--top .hero--top--left {
+    height: 200px;
+    top: -128px;
+  }
+  body .hero .hero--background .hero--bottom .hero--bottom--left {
+    height: 168px;
+    rotate: 2deg;
+  }
+  body .hero .hero--background .hero--bottom .hero--bottom--right {
+    height: 168px;
+    rotate: -2deg;
+    left: 64px;
+  }
   body .hero .hero--content .content--image img {
     left: -92px;
     width: 95%;
@@ -257,5 +270,28 @@ body .kontak--container .kontak .ikon--kontak img {
   body .hero .hero--content .content--information h1 {
     font-size: 8rem;
     line-height: 6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .hero {
+    display: flex;
+  }
+  body .hero .hero--background .hero--top .hero--top--left {
+    height: 248px;
+    top: -192px;
+    left: -32px;
+  }
+  body .hero .hero--content {
+    max-width: 768px;
+  }
+  body .hero .hero--content .content--image img {
+    left: 2vw;
+  }
+  body .hero .hero--content .content--information {
+    right: 128px;
+  }
+  body .hero .hero--content .content--information h1 {
+    font-size: 12rem;
+    line-height: 10rem;
   }
 }/*# sourceMappingURL=styles.css.map */

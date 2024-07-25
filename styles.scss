@@ -30,8 +30,8 @@ body {
         .hero--top--left {
           position: absolute;
           left: -24px;
-          top: -64px;
-          height: 128px;
+          top: -92px;
+          height: 168px;
           width: 125vw;
           background-color: var(--primary);
           rotate: -8deg;
@@ -68,7 +68,7 @@ body {
           bottom: 16px;
           width: 100vw;
           background-color: var(--primary);
-          rotate: -8deg;
+          rotate: -4deg;
           z-index: 1;
         }
       }
@@ -276,6 +276,25 @@ body {
 @media screen and (min-width: 992px) {
   body {
     .hero {
+      .hero--background {
+        .hero--top {
+          .hero--top--left {
+            height: 200px;
+            top: -128px;
+          }
+        }
+        .hero--bottom {
+          .hero--bottom--left {
+            height: 168px;
+            rotate: 2deg;
+          }
+          .hero--bottom--right {
+            height: 168px;
+            rotate: -2deg;
+            left: 64px;
+          }
+        }
+      }
       .hero--content {
         .content--image {
           img {
@@ -291,6 +310,38 @@ body {
           h1 {
             font-size: 8rem;
             line-height: 6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    .hero {
+      display: flex;
+      .hero--background {
+        .hero--top {
+          .hero--top--left {
+            height: 248px;
+            top: -192px;
+            left: -32px;
+          }
+        }
+      }
+      .hero--content {
+        max-width: 768px;
+        .content--image {
+          img {
+            left: 2vw;
+          }
+        }
+        .content--information {
+          right: 128px;
+          h1 {
+            font-size: 12rem;
+            line-height: 10rem;
           }
         }
       }
